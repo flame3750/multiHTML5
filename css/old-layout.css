@@ -1,0 +1,29 @@
+
+/* 멤버 링크*/
+.member{
+  background: yellow;
+  font-size: 0;
+  text-align: right;
+  
+}
+
+.member a, .member li{
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.member li{
+  display:inline-block;
+  font-size:1.6rem;
+}
+
+/* 메인 콘텐츠 */
+.group{
+  margin:0 15px;
+  float: left;
+  min-height: 400px;
+}
+
+
+
+
