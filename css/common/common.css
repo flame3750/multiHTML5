@@ -20,65 +20,75 @@
   position: relative;
   right: -0.5em;
 }
-
 /* 로고 */
 .logo{
   position: absolute;
   top: 45px;
   left: 70px;
 }
+/* 멤버 링크 */
 .member{
   margin-bottom: 2px;
 }
-/* 멤버 링크 */
 .member a{
   display: inline-block;
   text-transform: uppercase;
   padding: 0.5em;
 }
-
-/* 네비게이션 */
+/* 내비게이션 */
 .navigation{
-  background: yellow;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
-
 .menu{
   border-top: 2px solid #000;
   height: 50px;
   padding-left: 240px;
-  background: rgb(231,127,0);
-  background: linear-gradient(to bottom, #eab448 0%,#f28304 48%,#f28304 48%,#eab448 100%);
-  background: linear-gradient(180deg, rgba(231,127,0,1) 0%, rgba(255,206,126,1) 35%, rgba(255,206,126,1) 70%, rgba(231,127,0,1) 100%);
+  background: rgb(245,142,59);
+  background: linear-gradient(to bottom, #f28430 0%,#db5e29 35%,#db5e29 70%,#f28430 100%);
+  background: linear-gradient(180deg, rgba(245,142,59,1) 0%, rgba(224,86,12,1) 35%, rgba(224,86,12,1) 70%, rgba(245,142,59,1) 100%);
 }
-
 .menu-item{
-  display: flex;
-  align-items: center;
+  border-left: 2px solid rgba(255,255,255,0.5);
+  position: relative;
 }
-
 .btn-menu{
-  color:#fff;
+  color: #fff;
   font-weight: 700;
-  font-size:1.6rem;
+  font-size: 1.6rem;
   padding: 1em;
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
 }
-
-.sub-menu{
-  background-color: pink;
+.menu-act .btn-menu{
+  color: #ff0;
+  position: relative;
+}
+.menu-act .btn-menu::after{
   position: absolute;
+  top: 50px;
+  left: 50%;
+  content: "";
+  width: calc(100% - 2em);
+  display: block;
+  border-top: 2px solid #000;
+  transform: translateX(-50%);
+}
+.sub-menu{
   display: none;
+  position: absolute;
   white-space: nowrap;
-  top:52px;
+  top: 52px;
 }
-.sub-menu1, .sub-menu2, .sub-menu3{
-  left:0px;
+.sub-menu1, .sub-menu2,.sub-menu3{
+  left: 0;
 }
-.sub-menu4, .sub-menu5, .sub-menu6{
-  right:0px;
+.sub-menu4, .sub-menu5,.sub-menu6{
+  right: 0;
 }
-
+.sub-menu a{
+  margin-right: 0.5em;
+  padding: 0.5em 0;
+  display: inline-block;
+}
 /* 비주얼 */
 .visual{
   background-color: lime;

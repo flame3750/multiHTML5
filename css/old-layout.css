@@ -7,6 +7,19 @@
   display: inline-block;
   font-size: 1.4rem
 }
+/* 내비게이션 */
+.menu-item{
+  float: left;
+}
+.btn-menu{
+  line-height: 48px;
+}
+.menu-act .sub-menu{
+  display: block;
+}
+.sub-menu li{
+  display: inline-block;
+}
 /* 메인 콘텐츠 */
 .group{
   margin: 0 15px;

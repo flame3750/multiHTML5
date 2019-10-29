@@ -5,44 +5,20 @@
   position: relative;
   right: -0.5em;
 }
+/* 내비게이션 */
 .menu{
   display: flex;
   justify-content: space-between;
 }
-
 .menu-item{
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
-
-  position: relative;
+  display: flex;
+  align-items: center;
 }
-
 .menu-act .sub-menu{
-  display:flex;
+  display: flex;
 }
 
-.sub-menu1{
-  display:none;
-  
-}
-.sub-menu2{
-  display:none;
-}
-.sub-menu3{
-  display:none;
 
-}
-.sub-menu4{
-  display:none;
-
-}
-.sub-menu5{
-  display:none;
-
-}
-.sub-menu6{
-  display:none;
-
-}
 
 /* 메인 콘텐츠 */
 .main{
