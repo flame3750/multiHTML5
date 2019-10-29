@@ -1,12 +1,12 @@
-/* 멤버링크 */
+/* 멤버 링크 */
 .member{
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   position: relative;
   right: -0.5em;
 }
 
-/* 메인콘텐츠 */
+/* 메인 콘텐츠 */
 .main{
   display: flex;
   flex-flow: row nowrap;
@@ -15,6 +15,3 @@
 .group{
   margin: 0 15px;
 }
-
-
-

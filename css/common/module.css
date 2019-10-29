@@ -1,15 +1,15 @@
 /* 플로트 이슈를 해결하기 위한 스타일 */
-clearfix::after{
+.clearfix::after{
   display: block;
-  clear:both;
-  content:"";
+  clear: both;
+  content: "";
 }
-/* 숨김  콘텐츠 */
+/* 숨김 콘텐츠 */
 .a11y-hidden{
   position: absolute;
   width: 1px;
   height: 1px;
-  overflow:hidden;
-  clip:rect(0,0,0,0);
-  clip-path: polygon(0 0, 0 0, 0 0);
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  clip-path: polygon(0 0,0 0,0 0);
 }

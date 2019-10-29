@@ -1,58 +1,53 @@
-/* 기본 박스 사이징 정의 */
+/* 기본 box-sizing 정의 */
 *, *::before, *::after{
   box-sizing: border-box;
 }
 /* 컨테이너 */
 .container{
-  background-color: yellow;
+  background-color: #ccc;
+  background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 60%, #fff 100%);
 }
-/*  레이아웃 */
+/* 레이아웃 */
 .header, .visual, .main, .slogan, .footer{
   width: 940px;
   margin-left: auto;
   margin-right: auto;
 }
-
 /* 헤더 */
 .header{
   background-color: #fff;
-  /* height: 10vh; */
-  position: relative;
   padding: 2px 30px 10px;
+  position: relative;
   right: -0.5em;
 }
-/* 멤버링크 */
+/* 멤버 링크 */
 .member a{
-  display:inline-block;
+  display: inline-block;
   text-transform: uppercase;
   padding: 0.5em;
 }
-
 /* 비주얼 */
 .visual{
   background-color: lime;
   height: 120px;
 }
-
-/* 메인콘텐츠 */
+/* 메인 콘텐츠 */
 .main{
   background-color: #fff;
   padding: 30px 15px;
 }
-
 .group1{
-  background-color:silver;
+  background-color: silver;
   width: 250px;
 }
 .group2{
-  background-color:tan;
+  background-color: tan;
   width: 380px;
 }
 .group3{
-  background-color:teal;
+  background-color: teal;
   width: 190px;
 }
-
 /* 슬로건 */
 .slogan{
   background-color: coral;

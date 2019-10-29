@@ -1,7 +1,6 @@
-@import url("common/reset.css");
 @import url("common/base.css");
 @import url("common/module.css");
 @import url("common/common.css");
-@import url("old-layout.css");
-/* @import url("morden-layout.css"); */
+/* @import url("old-layout.css"); */
+@import url("morden-layout.css");
 @import url("common/content.css");
