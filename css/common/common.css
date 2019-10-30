@@ -105,6 +105,14 @@
   background-color: lime;
   height: 120px;
 }
+/* 비주얼 텍스트 */
+.visual-text{
+  width: 500px;
+  color: rgba(0,0,0,0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  animation: text-ani 500ms forwards;
+}
 /* 메인 콘텐츠 */
 .main{
   background-color: #fff;
