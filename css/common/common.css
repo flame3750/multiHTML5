@@ -19,6 +19,7 @@
   padding: 2px 30px 10px;
   position: relative;
   right: -0.5em;
+  border-radius: 0 0 15px 15px;
 }
 /* 로고 */
 .logo{
@@ -40,6 +41,7 @@
   padding-bottom: 40px;
 }
 .menu{
+  border-radius: 0 0 5px 5px;
   border-top: 2px solid #000;
   height: 50px;
   padding-left: 240px;
@@ -52,17 +54,26 @@
   position: relative;
 }
 .btn-menu{
+  display:block;
   color: #fff;
   font-weight: 700;
   font-size: 1.6rem;
-  padding: 1em;
+  padding: 0 1em;
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+  line-height: 48px;
 }
+
 .menu-act .btn-menu{
   color: #ff0;
   position: relative;
 }
+
 .menu-act .btn-menu::after{
+  content: "";
+  display:block;
+  border-top:2px solid black;
+}
+/* .menu-act .btn-menu::after{
   position: absolute;
   top: 50px;
   left: 50%;
@@ -71,7 +82,7 @@
   display: block;
   border-top: 2px solid #000;
   transform: translateX(-50%);
-}
+} */
 .sub-menu{
   display: none;
   position: absolute;
@@ -98,6 +109,7 @@
 .main{
   background-color: #fff;
   padding: 30px 15px;
+  border-radius: 0 0 15px 15px;
 }
 .group1{
   background-color: silver;

@@ -10,10 +10,8 @@
   display: flex;
   justify-content: space-between;
 }
-.menu-item{
-  display: flex;
-  align-items: center;
-}
+
+
 .menu-act .sub-menu{
   display: flex;
 }
