@@ -1,24 +1,22 @@
 /* 텍스트 애니메이션 */
 @keyframes text-ani{
   0%{
-    transform: translate(0,0);
-    font-size: 12px;
-    color: rgba(0,0,0,0);
+   transform: translate(0, 0);
+   font-size: 12px;
+   color: rgba(0,0,0,0);
   }
   100%{
-    transform: translate(400px,75px);
-    font-size: 24px;
-    color: rgba(0,0,0,1);
+   transform: translate(400px, 75px);
+   font-size: 24px;
+   color: rgba(0,0,0,1);
   }
 }
-
-/* 배경애니메이션 */
+/* 배경 애니메이션 */
 @keyframes bg-ani{
   0%{
-    opacity:1;
-
+    opacity: 1;
   }
   100%{
-    opacity:0;
+    opacity: 0;
   }
 }

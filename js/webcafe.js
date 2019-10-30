@@ -8,11 +8,11 @@ btn_menu.attr('role', 'button');
 submenu_lists.addClass('icon-dot-circled');
 
 btn_menu.on('click', function(e){
+  var current_menu_item = $(this).parent().hasClass('menu-act');
   e.preventDefault();
-  if($(this).parent().hasClass('menu-act')){
+  if(current_menu_item){
     $(this).parent().removeClass('menu-act');
-  }
-  else{
+  }else{
     menu_items.removeClass('menu-act');
     $(this).parent().addClass('menu-act');
   }

@@ -54,7 +54,7 @@
   position: relative;
 }
 .btn-menu{
-  display:block;
+  display: block;
   color: #fff;
   font-weight: 700;
   font-size: 1.6rem;
@@ -62,16 +62,14 @@
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
   line-height: 48px;
 }
-
 .menu-act .btn-menu{
   color: #ff0;
   position: relative;
 }
-
 .menu-act .btn-menu::after{
   content: "";
-  display:block;
-  border-top:2px solid black;
+  display: block;
+  border-top: 2px solid #000;
 }
 /* .menu-act .btn-menu::after{
   position: absolute;
@@ -105,9 +103,9 @@
   height: 120px;
   position: relative;
 }
-/* 비주얼 배경이미지 */
+/* 비주얼 배경 이미지 */
 .visual::before, .visual::after{
-  content:"";
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -115,16 +113,13 @@
   height: 100%;
   animation: bg-ani 2000ms infinite alternate;
 }
-
 .visual::before{
   background: url("../images/ani_flower_01.png") no-repeat 0 -10px, 
-              url("../images/ani_flower_02.png") no-repeat 670px 0;
+  url("../images/ani_flower_02.png") no-repeat 670px 0;
 }
-
 .visual::after{
   background: url("../images/ani_flower_03.png") no-repeat 300px 0, 
-              url("../images/ani_flower_04.png") no-repeat 800px 0;
-
+  url("../images/ani_flower_04.png") no-repeat 800px 0;
   animation-delay: 1000ms;
 }
 /* 비주얼 텍스트 */
@@ -132,14 +127,14 @@
   width: 500px;
   color: rgba(0,0,0,0);
   font-family: Georgia, 'Times New Roman', Times, serif;
-
   animation: text-ani 500ms forwards;
 }
 /* 메인 콘텐츠 */
 .main{
+  display: block;
   background-color: #fff;
   padding: 30px 15px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px 15px 0 0;
 }
 .group1{
   width: 250px;
@@ -154,6 +149,62 @@
 .login{
   background-image: radial-gradient(circle at right top, #f28430, #db5e29);
   border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 10px;
+}
+.login-heading{
+  color: #ff0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-left: 1em;
+}
+.login-form, .sign{
+  background-color: #fff;
+}
+.login-form{
+  margin-top: 0.5em;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 5px 10px;
+}
+.login-form fieldset{
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
+}
+.user-id, .user-pw{
+  margin-bottom: 5px;
+}
+[for="user-id"], [for="user-pw"]{
+  width: 4em;
+  display: inline-block;
+}
+[name="userEmail"], [name="userPwd"]{
+  border: 1px solid #aaa;
+  height: 24px;
+  width: 90px;
+  padding-left: 0.5em;
+}
+.btn-login{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 54px;
+  border: 1px solid #db5e29;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #f28430;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.sign{
+  border-radius: 0 0 5px 5px ;
+  padding: 0 10px 5px 10px;
+  font-size: 1.2rem;
+}
+.sign a::before{
+  color: #db5e29;
 }
 /* 슬로건 */
 .slogan{

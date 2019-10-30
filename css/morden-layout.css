@@ -10,13 +10,9 @@
   display: flex;
   justify-content: space-between;
 }
-
-
 .menu-act .sub-menu{
   display: flex;
 }
-
-
 
 /* 메인 콘텐츠 */
 .main{
@@ -26,4 +22,9 @@
 }
 .group{
   margin: 0 15px;
+}
+/* 로그인 */
+.sign{
+  display: flex;
+  justify-content: space-between;
 }

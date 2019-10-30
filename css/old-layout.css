@@ -11,7 +11,6 @@
 .menu-item{
   float: left;
 }
-
 .menu-act .sub-menu{
   display: block;
 }
@@ -23,4 +22,16 @@
   margin: 0 15px;
   float: left;
   min-height: 400px;
+}
+/* 로그인 */
+.sign::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.sign li:first-child{
+  float: left;
+}
+.sign li:last-child{
+  float: right;
 }
