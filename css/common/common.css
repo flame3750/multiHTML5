@@ -142,16 +142,18 @@
   border-radius: 0 0 15px 15px;
 }
 .group1{
-  background-color: silver;
   width: 250px;
 }
 .group2{
-  background-color: tan;
   width: 380px;
 }
 .group3{
-  background-color: teal;
   width: 190px;
+}
+/* 로그인 */
+.login{
+  background-image: radial-gradient(circle at right top, #f28430, #db5e29);
+  border-radius: 5px;
 }
 /* 슬로건 */
 .slogan{
