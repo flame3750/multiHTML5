@@ -12,4 +12,13 @@
   }
 }
 
-/* a */
+/* 배경애니메이션 */
+@keyframes bg-ani{
+  0%{
+    opacity:1;
+
+  }
+  100%{
+    opacity:0;
+  }
+}
