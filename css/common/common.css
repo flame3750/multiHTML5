@@ -283,22 +283,63 @@
   color:#fff;
   padding:0 1em;
 }
-/* 보드 */
+/* 공지사항 및 자료실 */
 .board{
-  background-color: yellow;
-  border: 1px solid #000;
-  height: 250px;
-  margin: 20px 0 0 0;
+  margin-top:20px;
+  position: relative;
+  padding-top:45px;
 }
-.notice{
-  background: orangered;
-  height: 50px;
+.notice-heading, .pds-heading{
+  position: absolute;
+  top:0px;
 }
-.pds{
-  background: gray;
-  height: 200px;
+.notice-heading{
+  left:0px;
 }
+.pds-heading{
+  left:82px;
+}
+.tab{
+  display:block;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 0.5em 1em;
+  color: #666;
+}
+.tab-act .tab{
+  background-color: #fff;
+  columns: #db5e29;
+  border-color: #db5e29 #db5e29 #fff #db5e29;
+}
+.notice-list, .notice-more, .pds-list, .pds-more{
+  display:none;
+}
+.tab-act .notice-list, .tab-act .notice-more,
+.tab-act .pds-list, .tab-act .pds-more{
+  display:block;
+}
+.notice-list li, .pds-list li{
+  margin-top:0.5em;
+  display:flex;
+  justify-content: space-between;
+}
+.notice-list a, .pds-list a{
+  width: 290px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+.more::before{
+  color:hsla(110, 30%, 30%, 1);
+}
+.notice-more, .pds-more{
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  padding:-0.5em;
 
+}
 /* 슬로건 */
 .slogan{
   background-color: coral;

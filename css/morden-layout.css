@@ -18,7 +18,7 @@
 .main{
   display: flex;
   flex-flow: row nowrap;
-  height: 60vh;
+  min-height: 400px;
 }
 .group{
   margin: 0 15px;
@@ -35,3 +35,35 @@
   justify-content: space-between;
   align-items:center;
 }
+
+
+
+
+/* .notice-heading, .pds-heading{
+  position: absolute;
+  padding: 5px 10px;
+  border:1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+}
+
+.notice-heading{
+  background: #666;
+  top: 0;
+  left: 0;
+}
+.pds-heading{
+  background: pink;
+  top: 0;
+  left: 70px;
+}
+
+.notice, .pds{
+  padding-top: 45px;
+}
+
+.notice-more, .pds-more{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding:8px;
+} */
