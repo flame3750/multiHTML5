@@ -308,8 +308,8 @@
   color: #666;
 }
 .tab-act .tab{
-  background-color: #fff;
-  columns: #db5e29;
+  background: #fff;
+  color: #db5e29;
   border-color: #db5e29 #db5e29 #fff #db5e29;
 }
 .notice-list, .notice-more, .pds-list, .pds-more{
