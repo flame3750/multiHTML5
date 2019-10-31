@@ -221,6 +221,46 @@
   padding-left: 4em;
   margin-top:10px; 
 }
+
+/* 용어 배너 */
+.term{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin: 20px 0 0 0;
+  padding: 10px 15px;
+  background: linear-gradient(#ccc, #eee);
+}
+
+.term-heading{
+  font-family: '';
+  font-size:1.5rem;
+  font-weight: 700;
+}
+.term-list{
+  margin-top:10px;
+}
+.term-list-subject, .term-list-brief{
+  float:right;
+  width: 145px;
+  
+}
+.term-list-subject{
+  color: #296897;
+  margin-top:-4px;
+  font-weight: 400;
+}
+
+.term-list-thumbnail{
+  float:left;
+}
+.term-list-thumbnail img{
+  vertical-align: top;
+}
+
+.term-list-brief{
+  line-height: 1.5;
+}
+
 /* 슬로건 */
 .slogan{
   background-color: coral;
