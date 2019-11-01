@@ -343,47 +343,175 @@
 
 /* 새소식 */
 .news{
-  background: yellow;
   margin-top:20px;
   position: relative;
+}
+.news::before{
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background: #ccc linear-gradient(to right, #ccc, #eee);
 }
 .news-heading{
   color: #db5e29;
   font-weight: 700;
+  font-size:1.5rem;
 }
 .news-item{
   margin-top:35px;
-  position: relative;
+  padding-left: 130px;
+  min-height: 110px;
 }
-.news-item-thumbnail{
-  position: absolute;
-  top:0;
-}
-.news-item-subject, .news-item-date, .news-item-summary{
-  float: right;
-  margin-left:130px;
-  width: 250px;
-}
-.news-item-subject{
-  
-}
-.news-item-date{
 
+.news-item-subject{
+  font-weight: 700;
 }
 .news-item-summary{
-
+  margin-top: .5em;
+  line-height: 1.5;
 }
 .news-more{
   position: absolute;
-  top: 0;
+  top: -0.5em;
+  right: -0.5em;
+  padding: -0.5em;
+}
+.news-item-thumbnail{
+  position: absolute;
+  left: 5px;
+  top: 63px;
+  text-align: center;
+}
+.news-item-thumbnail img{
+  margin-bottom: 1em;
+  box-shadow: 0 15px 15px 5px #ccc;
+}
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-box{
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding: 10px;
+
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+.event{
+  position: relative;
+}
+.event-thumbnail{
+  margin-top:0.5em;
+}
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #999;
+}
+.event-summary{
+  font-size:0.9em;
+}
+.event-heading, .related-heading, .favorite-heading{
+  font-weight: 700;
+  font-size:1.5rem;
+}
+.btn-event-wrapper{
+  position: absolute;
+  top: 3px;
   right: 0;
+}
+.btn-event-prev, .btn-event-next{
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  background: pink url("../images/back_forward.png") no-repeat;
+}
+.btn-event-next{
+  background-position: -36px 0;
+}
+.point-color{
+  color: #db5e29;
+}
+.related{
+  padding-top: 0.5em;
+  border-top: 1px solid #aaa;
+  margin-top: 10px;
+}
+.related-list{
+  background: #fff;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 2px 1em;
+  height: 27px;
+  overflow: hidden;
+  transition: all 400ms;
+}
+.related-list:hover{
+  height: 120px;
+  padding: 0.5em 1em;
+}
+.related-list a{
+  display: block;
+  line-height: 21px;
 
 }
+
+/* 인기 사이트 */
+.favorite{
+  margin-top: 20px;
+  position: relative;
+}
+.favorite-list{
+  list-style: none;
+  margin-top: 10px;
+  counter-reset: none;
+}
+.favorite-list li{
+  margin-top: 0.3em;
+  counter-increment: number;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.favorite-list li::before{
+  content:counter(number);
+  background: #999;
+  color: fff;
+  font-size: 1.2rem;
+  padding: 0 0.5em 2px;
+  margin-right: 0.5em;
+  border-radius: 2px;
+}
+.up, .stop, .down{
+  width: 9px;
+  height: 11px;
+  margin-left: auto;
+  background: url("../images/rank.png") no-repeat;
+  white-space: nowrap;
+  text-indent: 10px;
+  overflow:hidden;
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+.favorite-more{
+  position: absolute;
+  padding: 0.5em;
+  top: 3px;
+  right: 3px;
+  
+}
+
 /* 슬로건 */
 .slogan{
   background-color: coral;
   height: 10vh;
 }
+
 /* 푸터 */
 .footer-bg{
   background-color: #ccc;
